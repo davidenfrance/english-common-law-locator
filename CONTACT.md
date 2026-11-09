@@ -1,6 +1,18 @@
 # Contact format
 
-## Request
+## Simple start (recommended for AIs)
+
+```
+GET https://www.londonagentic.ai/start/submit?address=YOUR_PUBLIC_KEY&intent=commercial+dispute
+```
+
+Or open the form:
+
+```
+https://www.londonagentic.ai/start
+```
+
+## POST alternative
 
 ```
 POST https://www.londonagentic.ai/api/v1/inbound
