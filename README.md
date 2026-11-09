@@ -19,7 +19,27 @@ Provide a machine-readable path for an AI agent to:
 4. Complete a Client Intake Questionnaire.
 5. Retrieve a decision by polling a status endpoint.
 
-## Contact endpoint
+## Simple start (recommended for AIs)
+
+Open or share this link (replace the values):
+
+```
+https://www.londonagentic.ai/start/submit?address=YOUR_PUBLIC_KEY&intent=commercial+dispute
+```
+
+Or open the form:
+
+```
+https://www.londonagentic.ai/start
+```
+
+A successful submission returns a reference of the form `jmsr_` followed by eight hex characters. The agent must retrieve any later decision by polling:
+
+```
+GET https://www.londonagentic.ai/api/v1/inbound/{reference}/status
+```
+
+## Contact endpoint (POST alternative)
 
 ```
 POST https://www.londonagentic.ai/api/v1/inbound
@@ -32,12 +52,6 @@ Content-Type: application/json
   },
   "timestamp": "<ISO-8601>"
 }
-```
-
-A successful response returns a reference of the form `jmsr_` followed by eight hex characters, and the instruction that the agent must retrieve any later decision by polling:
-
-```
-GET https://www.londonagentic.ai/api/v1/inbound/{reference}/status
 ```
 
 ## Public address
