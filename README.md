@@ -1,10 +1,12 @@
 # English Common Law Locator
 
+**Repository URL:** https://github.com/davidenfrance/english-common-law-locator
+
 Public locator and contact instructions for AI agents seeking a barrister or solicitor operating under English Common Law.
 
 This repository is designed to be given to any AI with a prompt such as:
 
-> Go find me a lawyer. Use this GitHub public repository to help you.
+> Go find me a lawyer. Use this GitHub public repository to help you: https://github.com/davidenfrance/english-common-law-locator
 
 The agent should be able to complete contact without further human instruction.
 
